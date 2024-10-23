@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6271502245136182859}
+  - component: {fileID: 279051758612278381}
   - component: {fileID: 44496825097948108}
-  - component: {fileID: 7777265965239475262}
+  - component: {fileID: 69899788978436390}
   - component: {fileID: -5124725016421455804}
+  - component: {fileID: 7777265965239475262}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -35,6 +37,19 @@ Transform:
   - {fileID: 7887042904701464186}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &279051758612278381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199664697080624640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fccc47b54b8d4044d80d6dc3de89b5ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DeclerationSpeed: 0.43
 --- !u!114 &44496825097948108
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -47,9 +62,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a820f42b73470494b8a5648827f8a7e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DrunknessPower: 8
-  DirectionChangeTime: 0.1
---- !u!114 &7777265965239475262
+  DrunknessPower: 16
+  DirectionChangeTime: 0.05
+--- !u!114 &69899788978436390
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -58,10 +73,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4199664697080624640}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ad91dc0fd767b94b9db652ab966bc84, type: 3}
+  m_Script: {fileID: 11500000, guid: a7d66c1f5f337994e85a905ba363da60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SteerSpeed: 1
+  LevelXSize: 1
 --- !u!114 &-5124725016421455804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,6 +123,19 @@ MonoBehaviour:
   m_DefaultActionMap: Aqua_ActionMap
   m_SplitScreenIndex: -1
   m_Camera: {fileID: 0}
+--- !u!114 &7777265965239475262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199664697080624640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad91dc0fd767b94b9db652ab966bc84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SteerSpeed: 4
 --- !u!1 &6113434538447492243
 GameObject:
   m_ObjectHideFlags: 0
