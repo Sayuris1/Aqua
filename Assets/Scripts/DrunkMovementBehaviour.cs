@@ -16,7 +16,7 @@ public class DrunkMovementBehaviour : MonoBehaviour
         float random = SampleNoise(Time.deltaTime);
         float halfNegativeRandom = 0.5f - random;
 
-        ChangeXPosPerFrame(halfNegativeRandom * DrunknessPower);
+        transform.ChangeXPosPerFrame(halfNegativeRandom * DrunknessPower);
     }
 
     private float SampleNoise(float increaseLocation)
@@ -31,12 +31,5 @@ public class DrunkMovementBehaviour : MonoBehaviour
         }
 
         return Mathf.PerlinNoise1D(_noiseSampleLocation);
-    }
-
-    private void ChangeXPosPerFrame(float value)
-    {
-        Vector3 currentPos = transform.position;
-        currentPos.x += value * Time.deltaTime;
-        transform.position = currentPos;
     }
 }
