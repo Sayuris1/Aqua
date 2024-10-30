@@ -17,8 +17,9 @@ public class FallowObjectBehaviour : MonoBehaviour
     {
         Vector3 newPos = GameObjectToFollow.transform.position + _distance;        
         if(!IsXFollow)
-            newPos.x = 0;
+            newPos.x = transform.position.x;
         
+        //transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed * Mathf.PerlinNoise1D(Time.time));
         transform.position = Vector3.Slerp(transform.position, newPos, FollowSpeed);
     }
 }

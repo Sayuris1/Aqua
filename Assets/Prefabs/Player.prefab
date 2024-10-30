@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 69899788978436390}
   - component: {fileID: -5124725016421455804}
   - component: {fileID: 7777265965239475262}
+  - component: {fileID: 398862661201133561}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -118,6 +119,10 @@ MonoBehaviour:
         m_CallState: 2
     m_ActionId: dd2133f4-754c-4f50-b923-1b96c9e5222c
     m_ActionName: Aqua_ActionMap/Move_Action[/Keyboard/a,/Keyboard/d]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: eacbe2d4-eea5-48ba-a65b-2e845f37a1e5
+    m_ActionName: Aqua_ActionMap/Reload_Action[/Keyboard/r]
   m_NeverAutoSwitchControlSchemes: 1
   m_DefaultControlScheme: Keyboard
   m_DefaultActionMap: Aqua_ActionMap
@@ -136,6 +141,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SteerSpeed: 4
+--- !u!114 &398862661201133561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4199664697080624640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c8b02ef8a81bfa4b929591b392b582b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6113434538447492243
 GameObject:
   m_ObjectHideFlags: 0
