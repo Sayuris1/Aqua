@@ -38,7 +38,7 @@ public class SteerBehaviour : MonoBehaviour
         for (int i = 0; i < inputFloat.Length; i++)
             inputFloatRemaped[i] = inputFloat[i].Remap(0, 1023, SteerSpeed, -SteerSpeed);
 
-        //_direction = inputFloatRemaped[0] + inputFloatRemaped[1];
+        _direction = inputFloatRemaped[0] + inputFloatRemaped[1];
     }
 
     void OnConnectionEvent(bool success)
