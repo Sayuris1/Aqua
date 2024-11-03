@@ -1,5 +1,5 @@
-int potPin1 = A0;  // First potentiometer on analog pin A0
-int potPin2 = A1;  // Second potentiometer on analog pin A1
+const int potPin1 = A0;  // First potentiometer on analog pin A0
+const int potPin2 = A1;  // Second potentiometer on analog pin A1
 
 void setup() {
   Serial.begin(9600);  // Start serial communication at 9600 baud
@@ -13,6 +13,4 @@ void loop() {
   Serial.print(potValue1);
   Serial.print(",");
   Serial.println(potValue2);
-  
-  delay(200);  // Short delay to avoid flooding the serial port
 }

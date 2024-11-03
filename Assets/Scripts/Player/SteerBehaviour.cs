@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -16,11 +18,34 @@ public class SteerBehaviour : MonoBehaviour
 
     private void Update()
     {
-        _accelertedBehaviour.AddToAccelerationPerFrame(_direction * SteerSpeed);
+        _accelertedBehaviour.AddToAccelerationPerFrame(_direction );
     }
 
     public void GetSteerInput(InputAction.CallbackContext ctx)
     {
-        _direction = ctx.ReadValue<float>();
+        _direction = ctx.ReadValue<float>() * SteerSpeed;
+    }
+
+    void OnMessageArrived(string msg)
+    {
+        string copyMsg = string.Copy(msg);
+        string[] splitMsg= copyMsg.Split(',');
+
+        int[] inputInt = Array.ConvertAll(splitMsg, int.Parse);
+        float[] inputFloat = inputInt.Select(i => (float)i).ToArray();
+        float[] inputFloatRemaped = new float[inputFloat.Length];
+
+        for (int i = 0; i < inputFloat.Length; i++)
+            inputFloatRemaped[i] = inputFloat[i].Remap(0, 1023, SteerSpeed, -SteerSpeed);
+
+        _direction = inputFloatRemaped[0] + inputFloatRemaped[1];
+    }
+
+    void OnConnectionEvent(bool success)
+    {
+        if (success)
+            Debug.Log("Connection established");
+        else
+            Debug.Log("Connection attempt failed or disconnection detected");
     }
 }
