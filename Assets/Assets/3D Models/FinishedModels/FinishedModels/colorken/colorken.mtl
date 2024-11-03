@@ -1,0 +1,130 @@
+# Apple ModelI/O MTL File: colorken.mtl
+
+newmtl Sumele_Hair.004
+	map_Kd Sumele_Hair.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Hair.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Hair.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Dress.004
+	map_Kd Sumele_Dress.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Dress.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Dress.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Skin.004
+	map_Kd Sumele_Skin.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Skin.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Skin.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Jewelry.004
+	map_Kd Sumele_Jewelry.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Jewelry.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Jewelry.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Dress3.004
+	map_Kd Sumele_Dress3.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Dress3.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Dress3.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Dress2.004
+	map_Kd Sumele_Dress2.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Dress2.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Dress2.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Shoe.004
+	map_Kd Sumele_Shoe.004-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Shoe.004-metallic.png
+	specularTint 0
+	map_roughness Sumele_Shoe.004-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl _auto_
+	map_Kd _auto_-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic _auto_-metallic.png
+	specularTint 0
+	map_roughness _auto_-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

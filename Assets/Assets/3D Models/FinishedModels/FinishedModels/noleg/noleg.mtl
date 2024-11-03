@@ -1,0 +1,130 @@
+# Apple ModelI/O MTL File: noleg.mtl
+
+newmtl Sumele_Hair
+	map_Kd Sumele_Hair-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Hair-metallic.png
+	specularTint 0
+	map_roughness Sumele_Hair-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Dress
+	map_Kd Sumele_Dress-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Dress-metallic.png
+	specularTint 0
+	map_roughness Sumele_Dress-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Skin
+	map_Kd Sumele_Skin-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Skin-metallic.png
+	specularTint 0
+	map_roughness Sumele_Skin-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Jewelry
+	map_Kd Sumele_Jewelry-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Jewelry-metallic.png
+	specularTint 0
+	map_roughness Sumele_Jewelry-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Dress3
+	map_Kd Sumele_Dress3-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Dress3-metallic.png
+	specularTint 0
+	map_roughness Sumele_Dress3-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Dress2
+	map_Kd Sumele_Dress2-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Dress2-metallic.png
+	specularTint 0
+	map_roughness Sumele_Dress2-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl Sumele_Shoe
+	map_Kd Sumele_Shoe-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic Sumele_Shoe-metallic.png
+	specularTint 0
+	map_roughness Sumele_Shoe-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+
+newmtl FrontColor
+	map_Kd FrontColor-color.png
+	Kd 1 1 1
+	Ka 0 0 0
+	Ks 0
+	ao 0
+	subsurface 0
+	map_metallic FrontColor-metallic.png
+	specularTint 0
+	map_roughness FrontColor-roughness.png
+	anisotropicRotation 0
+	sheen 0.05
+	sheenTint 0
+	clearCoat 0
+	clearCoatGloss 0
+

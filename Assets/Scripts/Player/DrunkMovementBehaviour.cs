@@ -40,4 +40,5 @@ public class DrunkMovementBehaviour : MonoBehaviour
 
         return Mathf.PerlinNoise1D(_noiseSampleLocation);
     }
+    
 }
