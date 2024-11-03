@@ -1,39 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
+[RequireComponent(typeof(MoveForwardBehaviour ))]
+[RequireComponent(typeof(DrunkMovementBehaviour ))]
 public class CollideToReload : MonoBehaviour
 {
-    [SerializeField] private MoveForwardBehaviour move;
-    [SerializeField] private DrunkMovementBehaviour drunk;
-    private static bool willReset = false;
-    private Animator animator;
+    private MoveForwardBehaviour _moveForwardBehaviour;
+    private DrunkMovementBehaviour _drunkMovementBehaviour;
+    private static bool _willReset = false;
 
-    void OnTriggerEnter(Collider other)
+    private void Start()
     {
-        
+        _moveForwardBehaviour = GetComponent<MoveForwardBehaviour>();
+        _drunkMovementBehaviour = GetComponent<DrunkMovementBehaviour>();
 
+        _willReset = false;
+    }
+
+    void OnCollisionEnter(Collision other)
+    {
         Debug.Log($"COLLIDED WITH {other.gameObject.name}");
 
-        if (other.gameObject.tag == "Obstacle")
-        {
-            var animator = other.GetComponent<Animator>();
+        if (!other.gameObject.CompareTag("Obstacle"))
+            return;
+
+        if (other.gameObject.TryGetComponent(out Animator animator))
             animator.SetTrigger("Fall");
-            move.Speed = 0f;
-            drunk.enabled = false;
 
+        _moveForwardBehaviour.Speed = 0f;
+        _drunkMovementBehaviour.enabled = false;
 
-            if (willReset) return;
-            willReset = true;
-            Invoke(nameof(ResetScene), 2f);
-        }
+        if (_willReset)
+            return;
+
+        _willReset = true;
+        Invoke(nameof(ResetScene), 2f);
     }
 
     private void ResetScene()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
-        willReset = false;
+        _willReset = false;
     }
 }
