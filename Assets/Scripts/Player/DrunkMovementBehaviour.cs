@@ -5,6 +5,7 @@ public class DrunkMovementBehaviour : MonoBehaviour
 {
     // Speed
     public float DrunknessPower = 0.1f;
+    public float DrunkSpeed = 1.0f;
 
     // Sample Speed
     public float DirectionChangeTime = 0.1f;
@@ -16,13 +17,16 @@ public class DrunkMovementBehaviour : MonoBehaviour
 
     private void Start()
     {
+        _noiseSampleLocation = Time.time * Random.value;
         _accelertedBehaviour = GetComponent<AcceleratedMovementBehaviour>();
     }
 
     private void Update()
     {
-        float random = SampleNoise(Time.deltaTime);
-        float halfNegativeRandom = 0.5f - random;
+        float random = SampleNoise(Time.deltaTime * DrunkSpeed);
+        float halfNegativeRandom = random - 0.5f;
+
+        Debug.Log(halfNegativeRandom * DrunknessPower);
 
         _accelertedBehaviour.AddToAccelerationPerFrame(halfNegativeRandom * DrunknessPower);
     }

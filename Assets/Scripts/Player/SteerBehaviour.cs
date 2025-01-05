@@ -36,7 +36,7 @@ public class SteerBehaviour : MonoBehaviour
         float[] inputFloatRemaped = new float[inputFloat.Length];
 
         for (int i = 0; i < inputFloat.Length; i++)
-            inputFloatRemaped[i] = inputFloat[i].Remap(0, 1023, SteerSpeed, -SteerSpeed);
+            inputFloatRemaped[i] = Mathf.Clamp(inputFloat[i].Remap(850, 300, SteerSpeed, -SteerSpeed), -SteerSpeed, SteerSpeed);
 
         _direction = inputFloatRemaped[0] + inputFloatRemaped[1];
     }
