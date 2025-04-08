@@ -13,7 +13,7 @@ public class EndTrigger : MonoBehaviour
 
         if (other.gameObject.tag == "Player")
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+            SceneManager.LoadScene(2);
         }
     }
 }

@@ -26,7 +26,7 @@ public class DrunkMovementBehaviour : MonoBehaviour
         float random = SampleNoise(Time.deltaTime * DrunkSpeed);
         float halfNegativeRandom = random - 0.5f;
 
-        Debug.Log(halfNegativeRandom * DrunknessPower);
+        //Debug.Log(halfNegativeRandom * DrunknessPower);
 
         _accelertedBehaviour.AddToAccelerationPerFrame(halfNegativeRandom * DrunknessPower);
     }

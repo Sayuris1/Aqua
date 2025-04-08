@@ -28,6 +28,8 @@ public class SteerBehaviour : MonoBehaviour
 
     void OnMessageArrived(string msg)
     {
+        Debug.Log(msg);
+
         string copyMsg = string.Copy(msg);
         string[] splitMsg= copyMsg.Split(',');
 

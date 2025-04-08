@@ -71,7 +71,7 @@ namespace CrazyPhone.PortDetector
                 break;
             }
 
-            if (!connected) UpdateStatus("no device connected!");
+            if (!connected) UpdateStatus("Device found!");
             UpdateProgress(progress, progress);
             yield return new WaitForSeconds(2f);
             SceneManager.LoadScene(sceneToLoadOnFinished);
